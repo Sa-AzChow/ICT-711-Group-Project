@@ -1,0 +1,2 @@
+"""EcoGrid prototype package."""
+
