@@ -1,4 +1,4 @@
-# ICT-711 Group Project - EcoGrid Energy
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1686b4f4-bc24-49cf-8311-7f65820f8641" /># ICT-711 Group Project - EcoGrid Energy
 
 EcoGrid Energy is a peer-to-peer renewable energy trading prototype for ICT711 Advanced Software Engineering. The project demonstrates how smart meter readings can be ingested, transformed into energy positions, matched in a marketplace, and settled through a resilient event-driven workflow.
 
@@ -69,50 +69,19 @@ source .venv/bin/activate
 
 No external dependencies are required for the current prototype. It uses the Python standard library.
 
-## Quick Start
-
-Run the complete test suite from the parent folder of the `ecogrid` package:
-
-```bash
-python -m unittest discover -s ecogrid -p "test_*.py"
-```
-
-## How to Run the Code
-
-The project is mainly demonstrated through the `EcoGridSystem` class in `services.py`. A simple run can be executed with:
-
-```bash
-python -c "from ecogrid.services import EcoGridSystem; s=EcoGridSystem(); s.start(); s.run_batch([('seller_1', 7.0, 2.0), ('buyer_1', 1.0, 4.0)]); s.stop(); print(dict(s.telemetry.counters))"
-```
-
-This example:
-
-- Creates an EcoGrid system instance
-- Ingests one seller meter reading and one buyer meter reading
-- Runs marketplace matching
-- Runs settlement
-- Prints telemetry counters showing the events processed by the system
-
 ## How to Run Tests
 
-Run all tests:
+## Run the demo
 
-```bash
-python -m unittest discover -s ecogrid -p "test_*.py"
+```powershell
+python run_demo.py
 ```
 
-Run functional requirement tests:
+## Run tests (fitness checks)
 
-```bash
-python -m unittest ecogrid.test_functional_requirements
+```powershell
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
-
-Run fitness-function tests:
-
-```bash
-python -m unittest ecogrid.test_fitness_functions
-```
-
 
 ## Team Contributions
 
