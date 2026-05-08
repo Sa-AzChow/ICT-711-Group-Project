@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1686b4f4-bc24-49cf-8311-7f65820f8641" /># ICT-711 Group Project - EcoGrid Energy
+ICT-711 Group Project - EcoGrid Energy
 
 EcoGrid Energy is a peer-to-peer renewable energy trading prototype for ICT711 Advanced Software Engineering. The project demonstrates how smart meter readings can be ingested, transformed into energy positions, matched in a marketplace, and settled through a resilient event-driven workflow.
 
@@ -102,3 +102,5 @@ This prototype supports the ICT711 architecture report by demonstrating:
 - Saga-based distributed transaction handling
 - Resilience patterns such as retry, circuit breaker, and idempotency
 - Automated functional and architecture fitness-function tests
+
+*code output is in output folder*
